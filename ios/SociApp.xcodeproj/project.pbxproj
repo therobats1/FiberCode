@@ -60,6 +60,13 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		729F77A92DFA798700B48CA1 /* fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = fonts;
+			sourceTree = "<group>";
+		};
 		832341AE1AAA6A7D00B99B32 /* Libraries */ = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +77,7 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				729F77A92DFA798700B48CA1 /* fonts */,
 				13B07FAE1A68108700A75B9A /* SociApp */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				83CBBA001A601CBA00E9B192 /* Products */,

@@ -1,9 +1,10 @@
 import React, { useState} from 'react';
 import { View, Text, StyleSheet, TouchableOpacity, TextInput } from 'react-native';
+import { useNavigation } from '@react-navigation/native';
 import GradientText from '../components/GradientText';
-import Icon from 'react-native-vector-icons/FontAwesome';
 
 export default function Opening() {
+  const navigation = useNavigation()
   const [Email,setEmail] = useState('');
   const [Password, setPassword] = useState('');
   return (
@@ -16,7 +17,7 @@ export default function Opening() {
       <TextInput
         placeholder='Email'
         style={styles.input}
-        onChangeText={setEmail} //for useer to be able to enter 
+        onChangeText={setEmail} //for user to be able to enter 
         value={Email}
       />
       <TextInput
@@ -28,10 +29,10 @@ export default function Opening() {
       />
       
     <View style={styles.buttonRow}>
-      <TouchableOpacity style={styles.button} onPress={() => alert('Log In')}>
+      <TouchableOpacity style={styles.button} onPress={() => navigation.navigate('Navigator')}>
         <Text style={styles.buttonText}>Log In</Text>
       </TouchableOpacity>
-      <TouchableOpacity style={styles.button} onPress={() => alert('Sign Up')}>
+      <TouchableOpacity style={styles.button}>
         <Text style={styles.buttonText}>Sign Up</Text>
       </TouchableOpacity>
     </View>
