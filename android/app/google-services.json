@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "884254030425",
+    "project_id": "database-83393",
+    "storage_bucket": "database-83393.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:884254030425:android:8c50a72d5b11b62f2a0f48",
+        "android_client_info": {
+          "package_name": "com.App.SCIOApp"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyCN76A_ZhOsFBnta9n4CG3ko-psVSPiGhI"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
