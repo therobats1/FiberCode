@@ -4,6 +4,7 @@ import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import AntDesign from 'react-native-vector-icons/AntDesign';
 import UserProfile from './UserProfile';
 import Scan from './Scan';
+import Products from './Products';
 
 const Tab = createBottomTabNavigator();
 
@@ -27,6 +28,7 @@ export default function Navigator() {
           if (route.name === 'My profile') iconName = 'user';
           else if (route.name === 'Scan') iconName = 'camerao';
           else if (route.name === 'Setting') iconName = 'setting';
+          else if (route.name === 'Product') iconName = 'appstore-o';
           return <AntDesign name={iconName} size={30} color={color} />;
         },
 
@@ -56,6 +58,7 @@ export default function Navigator() {
       <Tab.Screen name="My profile" component={UserProfile} /> 
       <Tab.Screen name="Scan" component={Scan} />
       <Tab.Screen name="Setting" component={Setting} />
+      <Tab.Screen name="Product" component={Products} />
     </Tab.Navigator>
   );
 }
